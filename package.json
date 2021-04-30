@@ -1,0 +1,28 @@
+{
+  "name": "parcel-test.loc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "parcel-build-css": "parcel build resources/test/**/*.scss -o style.min.css --no-source-maps",
+    "parcel-build-js": "parcel build resources/test/**/*.js -o script.min.js --no-source-maps",
+    "p_test": "npm run parcel-build-css && npm run parcel-build-js",
+    "p_dev": "parcel            resources/test/**/source_style.scss --out-dir resources/test --out-file style.css resources/test/**/source_script.js --out-dir resources/test --out-file script,js --no-source-maps",
+    "p_build": "parcel build resources/test/**/source_style.scss resources/test/**/source_script.js --out-file style.css script.js --no-source-maps",
+    "p_watch": "parcel watch    resources/test/**/source_style.scss --out-dir resources/test --out-file style.css resources/test/**/source_script.js --out-dir resources/test --out-file script,js --no-source-maps",
+    "p_help": "parcel help",
+
+
+    "p_test1": "parcel build test/**/*.scss -d dist1 -o style.min.css --no-source-maps"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.21",
+    "laravel-mix": "^6.0.6",
+    "lodash": "^4.17.19",
+    "parcel-bundler": "^1.12.5",
+    "postcss": "^8.1.14",
+    "sass": "^1.32.12"
+  }
+}
